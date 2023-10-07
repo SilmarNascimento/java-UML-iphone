@@ -61,11 +61,24 @@ public class Iphone implements MusicPlayer, Telephone, InternetBrowser{
   }
 
   public void infoMessage() {
-    System.out.println(this.getName() + " was build in " + this.getManufacturingYear() + " with the version " + this.getVersion());
+    System.out.println(this.getName() + " was build in " + this.getManufacturingYear() + " in the version " + this.getVersion());
   }
 
   public static void main(String[] args) {
     Iphone myIphone = new Iphone("Silmar's Iphone", 6.0f, 2014);
 
+    myIphone.selectMusic();
+    myIphone.play();
+    myIphone.pause();
+
+    myIphone.call();
+    myIphone.answerCall();
+    myIphone.voiceMail();
+
+    myIphone.showPage();
+    myIphone.addNewTab();
+    myIphone.refreshPage();
+
+    myIphone.infoMessage();
   }
 }
